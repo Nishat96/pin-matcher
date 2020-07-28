@@ -82,10 +82,10 @@
         // Generating Random number
         var generate = document.getElementById("generate");
         generate.addEventListener('click', function(){
-            
-                var result1 = Math.random()*10000;
-                var result2 = Math.ceil(result1);
-                var mainPin = document.getElementById("showPin").value = result2;
+             var result = Math.floor(1000 + Math.random() * 9000);
+                // var result1 = Math.random()*10000;
+                // var result2 = Math.ceil(result1);
+                var mainPin = document.getElementById("showPin").value = result;
         })
 
         // function allButton(id){
